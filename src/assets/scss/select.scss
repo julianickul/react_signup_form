@@ -1,0 +1,68 @@
+.select-box {
+	position: relative;
+	&__toggler {
+		background: #FFFFFF;
+		border: 1px solid #DBE2EA;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+		border-radius: 6px;
+		padding: 0 40px 0 15px;
+		height: 52px;
+		line-height: 46px;
+		position: relative;
+		cursor: pointer;
+		&::after {
+			content: '';
+			position: absolute;
+			right:20px;
+			top:17px;
+			z-index: 10;
+			width: 10px;
+			height: 10px;
+			border: solid #2fb1ac;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+		}
+	}
+	&.select-box_is-opened {
+		.select-box__toggler {
+			border: 2px solid #0880AE;
+		}
+	}
+	&__options-container {
+		position: absolute;
+		left: 0;
+		top:58px;
+		z-index: 100;
+		width: 100%;
+	}
+	&__options-list {
+		padding: 0;
+		margin: 0;
+		background-color: #fff;
+		border: 1px solid #DBE2EA;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04), 0px 20px 20px rgba(44, 39, 56, 0.04);
+		border-radius: 6px;
+		&:first-child {
+			padding-top: 0.8em;
+		}
+	}
+	&__option {
+		list-style: none;
+		height: 44px;
+		line-height: 44px;
+		padding: 0 15px;
+		color:#756F86;
+		cursor: pointer;
+		&:hover {
+			background-color: #EBF4F8;
+		}
+	}
+}
+
+select.is-hidden:focus + .select-box {
+	.select-box__toggler {
+		border: 2px solid #0880AE;
+	}
+}

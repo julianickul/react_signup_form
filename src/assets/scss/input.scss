@@ -1,0 +1,39 @@
+@mixin input_base {
+	border: 0;
+	margin: 0;
+	padding: 0 16px;
+	appearance: none;
+	outline: none;
+
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-family: $font-family-ibmPlex;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	
+	&:focus {
+		outline: none;
+	}
+}
+@mixin input-text_normal {
+	width: 100%;
+	height: 52px;
+	background: var(--c-white);
+	border: 1px solid var(--c-blue04);
+	box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+	color: var(--c-darkgray);
+}
+@mixin input-text_active {
+	border: 2px solid var(--c-blue01);
+}
+
+.input {
+	@include input_base;
+	&_type_text {
+		@include input-text_normal;
+		&:focus {
+			@include input-text_active;
+		}
+	}
+}

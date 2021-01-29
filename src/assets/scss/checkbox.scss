@@ -1,0 +1,65 @@
+.input_type_checkbox {
+	position: absolute;
+	opacity: 0;
+	
+	& + .field__label-text {
+		position: relative;
+		cursor: pointer;
+		padding: 0 0 0 36px;
+		&::before, 
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+		}
+		&::before {
+			top:0;
+			left:0;
+			width: 28px;
+			height: 28px;
+			background: #FFFFFF;
+			border: 1px solid #DBE2EA;
+			box-sizing: border-box;
+			box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+			border-radius: 4px;
+		}
+		&::after {
+			top:5px;
+			left:10px;
+			width: 6px;
+			height: 12px;
+			border: solid #2fb1ac;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+			display: none;
+		}
+	}
+
+	// Box checked
+	&:checked + .field__label-text {
+		&::before {
+			border: 2px solid #0880AE;
+			box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+		}
+		&::after {
+			display: block;
+		}
+	}
+
+	&:focus + .field__label-text {
+		&::before {
+			border: 2px solid #0880AE;
+			box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+		}
+	}
+	
+	// Disabled state label.
+	&:disabled + .field__label-text {
+		cursor: auto;
+		&::before {
+			background: #DBE2EA;
+			border: 1px solid #DBE2EA;
+		}
+	}
+}
+

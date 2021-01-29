@@ -1,0 +1,57 @@
+@mixin btn_base {
+	transition: all .5s ease;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	appearance: none;
+	cursor: pointer;
+	outline: none;
+
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-family: $font-family-ibmPlex;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+
+	width: 100%;
+	height: 57px;
+	&:focus {
+		outline: none;
+	}
+}
+@mixin btn-primary_normal {
+	background: var(--c-blue01);
+	color: var(--c-blue02);
+	box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+}
+@mixin btn-primary_hover {
+	box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.08), 0px 24px 48px rgba(44, 39, 56, 0.16);
+}
+@mixin btn-primary_active {
+	border: 2px solid rgba(44, 39, 56, 0.86);
+	box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001), 0px 4px 8px rgba(44, 39, 56, 0.08);
+}
+@mixin btn-primary_disabled {
+	background: #DBE2EA;
+	box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.08);
+	color: rgba(44,39,56,.5);
+}
+
+
+.button {
+	@include btn_base;
+	&_style_primary {
+		@include btn-primary_normal;
+		&:hover {
+			@include btn-primary_hover;
+		}
+		&:focus {
+			@include btn-primary_active;
+		}
+		&:disabled {
+			@include btn-primary_disabled;
+		}
+	}
+}

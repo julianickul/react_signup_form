@@ -1,0 +1,18 @@
+:root {
+	--c-black: #000;
+	--c-darkgray: #2C2738;
+	--c-blue01: #0880AE;
+	--c-blue02: #EBF4F8;
+	--c-blue03: #7C9CBF;
+	--c-blue04: #DBE2EA;
+	--c-blue05: #756F86;
+	--c-white: #fff;
+
+	--c-red: #FF7171;
+}
+
+::placeholder {
+	color: var(--c-blue03);
+}
+
+$font-family-ibmPlex: 'ibmPlexSans', 'Arial', Tahoma, Geneva, Verdana, sans-serif;

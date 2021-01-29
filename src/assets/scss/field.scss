@@ -1,0 +1,16 @@
+.field {
+	&__label {
+		display: block;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		color: var(--c-blue05);
+		margin-bottom: 7px;
+	}
+	&__error {
+		font-size: 14px;
+		line-height: 18px;
+		color: var(--c-red);
+		margin-top: 8px;
+	}
+}
