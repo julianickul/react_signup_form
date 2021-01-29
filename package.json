@@ -6,7 +6,7 @@
     "type" : "git",
     "url" : "https://github.com/julianickul/react_signup_form.git"
   },
-  "homepage": "https://julianickul.github.io/react_signup_form/",
+  "homepage": "https://julianickul.github.io/react_signup_form",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
