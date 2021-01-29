@@ -14,3 +14,5 @@
 Проект выполнен на базе `create-react-app`
 Запуск: `npm start`
 
+[Опубликовано на Github Pages](https://julianickul.github.io/react_signup_form/)
+
