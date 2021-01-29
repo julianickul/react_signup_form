@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.47052a65.chunk.css",
-    "main.js": "/static/js/main.1beadb4f.chunk.js",
-    "main.js.map": "/static/js/main.1beadb4f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2fe2c6ab.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2fe2c6ab.js.map",
-    "static/js/2.b56a4a12.chunk.js": "/static/js/2.b56a4a12.chunk.js",
-    "static/js/2.b56a4a12.chunk.js.map": "/static/js/2.b56a4a12.chunk.js.map",
-    "static/js/3.9fc2f017.chunk.js": "/static/js/3.9fc2f017.chunk.js",
-    "static/js/3.9fc2f017.chunk.js.map": "/static/js/3.9fc2f017.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.47052a65.chunk.css.map": "/static/css/main.47052a65.chunk.css.map",
-    "static/js/2.b56a4a12.chunk.js.LICENSE.txt": "/static/js/2.b56a4a12.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/ibmplexsans-regular.cb3835d5.woff"
+    "main.css": "/react_signup_form/static/css/main.c19be39d.chunk.css",
+    "main.js": "/react_signup_form/static/js/main.1beadb4f.chunk.js",
+    "main.js.map": "/react_signup_form/static/js/main.1beadb4f.chunk.js.map",
+    "runtime-main.js": "/react_signup_form/static/js/runtime-main.f2f3818c.js",
+    "runtime-main.js.map": "/react_signup_form/static/js/runtime-main.f2f3818c.js.map",
+    "static/js/2.b56a4a12.chunk.js": "/react_signup_form/static/js/2.b56a4a12.chunk.js",
+    "static/js/2.b56a4a12.chunk.js.map": "/react_signup_form/static/js/2.b56a4a12.chunk.js.map",
+    "static/js/3.9fc2f017.chunk.js": "/react_signup_form/static/js/3.9fc2f017.chunk.js",
+    "static/js/3.9fc2f017.chunk.js.map": "/react_signup_form/static/js/3.9fc2f017.chunk.js.map",
+    "index.html": "/react_signup_form/index.html",
+    "static/css/main.c19be39d.chunk.css.map": "/react_signup_form/static/css/main.c19be39d.chunk.css.map",
+    "static/js/2.b56a4a12.chunk.js.LICENSE.txt": "/react_signup_form/static/js/2.b56a4a12.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/react_signup_form/static/media/ibmplexsans-regular.cb3835d5.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.2fe2c6ab.js",
+    "static/js/runtime-main.f2f3818c.js",
     "static/js/2.b56a4a12.chunk.js",
-    "static/css/main.47052a65.chunk.css",
+    "static/css/main.c19be39d.chunk.css",
     "static/js/main.1beadb4f.chunk.js"
   ]
 }
